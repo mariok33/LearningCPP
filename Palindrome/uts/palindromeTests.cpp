@@ -19,3 +19,9 @@ TEST_F(PalindromeTests, shouldReturnTrueAfterCheckEmptyString)
     std::string phrase {""};
     EXPECT_TRUE(isPalindrome(phrase));
 }
+
+TEST_F(PalindromeTests, shouldReturnTrueAfterCheckStringWithWhitespaceCharacters)
+{
+    std::string phrase {" "};
+    EXPECT_TRUE(isPalindrome(phrase));
+}
