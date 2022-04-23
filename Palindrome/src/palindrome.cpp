@@ -12,7 +12,7 @@ bool isPalindrome(const std::string& phrase)
     std::deque<char> phraseSecond;
     for (char c : phrase)
     {
-        if (std::isalpha(c))
+        if (std::isalnum(c))
             phraseSecond.push_back(std::toupper(c)); 
     }
 
