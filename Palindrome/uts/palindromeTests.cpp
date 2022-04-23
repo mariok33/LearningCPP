@@ -14,7 +14,7 @@ public:
     void TearDown() override {};
 };
 
-TEST_F(PalindromeTests, shouldReturnTrueAfterCheckEmptyPalindrome)
+TEST_F(PalindromeTests, shouldReturnTrueAfterCheckEmptyString)
 {
     std::string phrase {""};
     EXPECT_TRUE(isPalindrome(phrase));
