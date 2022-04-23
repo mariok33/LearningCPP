@@ -16,3 +16,9 @@ TEST_F(FactorialTests, shouldReturn0ForACalculateFactorialFunctionParameterValue
     unsigned int number {0};
     EXPECT_EQ(calculateFactorial(number), 0);
 }
+
+TEST_F(FactorialTests, shouldReturn1ForACalculateFactorialFunctionParameterValueOf1)
+{
+    unsigned int number {1};
+    EXPECT_EQ(calculateFactorial(number), 1);
+}
