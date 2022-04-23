@@ -31,3 +31,9 @@ TEST_F(PalindromeTests, shouldReturnTrueAfterCheckString_Aba)
     std::string phrase {"Aba"};
     EXPECT_TRUE(isPalindrome(phrase));
 }
+
+TEST_F(PalindromeTests, shouldReturnTrueAfterCheckString_1A_ba1)
+{
+    std::string phrase {"1A ba1"};
+    EXPECT_TRUE(isPalindrome(phrase));
+}
