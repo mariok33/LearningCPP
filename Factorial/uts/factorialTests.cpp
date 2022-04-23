@@ -10,3 +10,9 @@ public:
     void SetUp() override {};
     void TearDown() override {};
 };
+
+TEST_F(FactorialTests, shouldReturn0ForACalculateFactorialFunctionParameterValueOf0)
+{
+    unsigned int number {0};
+    EXPECT_EQ(calculateFactorial(number), 0);
+}
