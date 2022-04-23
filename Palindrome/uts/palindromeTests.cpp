@@ -2,6 +2,8 @@
 
 #include "gtest/gtest.h"
 
+#include <string>
+
 class PalindromeTests : public ::testing::Test 
 {
 public:
@@ -11,3 +13,9 @@ public:
     void SetUp() override {};
     void TearDown() override {};
 };
+
+TEST_F(PalindromeTests, shouldReturnTrueAfterCheckEmptyPalindrome)
+{
+    std::string phrase {""};
+    EXPECT_TRUE(isPalindrome(phrase));
+}
