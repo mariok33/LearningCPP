@@ -1,4 +1,4 @@
-add_library(StringToInt src/charToInt.cpp)
+add_library(StringToInt src/stringToInt.cpp)
 
 target_include_directories(StringToInt PUBLIC include)
 

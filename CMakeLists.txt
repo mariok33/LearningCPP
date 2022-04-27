@@ -21,6 +21,7 @@ enable_testing()
 add_test(tests_for_factorial Factorial/tests_for_factorial)
 add_test(tests_for_palindrome Palindrome/tests_for_palindrome)
 add_test(tests_for_stringToInt StringToInt/tests_for_stringToInt)
+add_test(tests_for_stack Stack/tests_for_stack)
 
 add_custom_target(testsFactorial
                   COMMAND "./Factorial/tests_for_factorial)"
@@ -33,3 +34,7 @@ add_custom_target(testsPalindrome
 add_custom_target(testsStringToInt
                   COMMAND "./StringToInt/tests_for_stringToInt)"
                   DEPENDS tests_for_stringToInt)
+
+add_custom_target(testsStack
+                  COMMAND "./Stack/tests_for_stack)"
+                  DEPENDS tests_for_stack)
