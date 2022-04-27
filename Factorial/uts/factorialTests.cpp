@@ -1,6 +1,9 @@
 #include "factorial.hpp"
 #include "gtest/gtest.h"
 
+#include <stdexcept>
+#include <string>
+
 class FactorialTests : public ::testing::Test 
 {
 public:
@@ -13,12 +16,18 @@ public:
 
 TEST_F(FactorialTests, shouldReturn0ForACalculateFactorialFunctionParameterValueOf0)
 {
-    unsigned int number {0};
+    int number {0};
     EXPECT_EQ(calculateFactorial(number), 0);
 }
 
 TEST_F(FactorialTests, shouldReturn1ForACalculateFactorialFunctionParameterValueOf1)
 {
-    unsigned int number {1};
+    int number {1};
     EXPECT_EQ(calculateFactorial(number), 1);
+}
+
+TEST_F(FactorialTests, shouldReturnExceptionForACalculateFactorialFunctionParameterValueOfMinus1)
+{
+    int number {-1};
+    EXPECT_THROW(calculateFactorial(number), std::out_of_range);
 }

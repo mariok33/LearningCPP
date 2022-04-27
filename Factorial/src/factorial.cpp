@@ -2,12 +2,19 @@
 
 #include <iostream>
 
-unsigned int calculateFactorial(unsigned int number)
+int calculateFactorial(int number)
 {
-    unsigned int factorial = number;
-    for(unsigned int factor = 1; factor < number; ++factor)
+    int factorial = number;
+    if(number >= 0)
     {
-        factorial *= factor;
+        for(int factor = 1; factor < number; ++factor)
+        {
+            factorial *= factor;
+        }
+    }
+    else
+    {
+        throw std::out_of_range("Factorial calculator don't caunt negative numbers");
     }
 
     return factorial;
