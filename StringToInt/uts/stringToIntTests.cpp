@@ -1,4 +1,4 @@
-#include "charToInt.hpp"
+#include "stringToInt.hpp"
 #include "gtest/gtest.h"
 
 #include <string>

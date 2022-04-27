@@ -15,12 +15,12 @@ FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(Factorial)
 add_subdirectory(Palindrome)
-add_subdirectory(CharToInt)
+add_subdirectory(StringToInt)
 
 enable_testing()
 add_test(tests_for_factorial Factorial/tests_for_factorial)
 add_test(tests_for_palindrome Palindrome/tests_for_palindrome)
-add_test(tests_for_stringToInt CharToInt/tests_for_charToInt)
+add_test(tests_for_stringToInt StringToInt/tests_for_stringToInt)
 
 add_custom_target(testsFactorial
                   COMMAND "./Factorial/tests_for_factorial)"
@@ -31,5 +31,5 @@ add_custom_target(testsPalindrome
                   DEPENDS tests_for_palindrome)
 
 add_custom_target(testsStringToInt
-                  COMMAND "./CharToInt/tests_for_charToInt)"
-                  DEPENDS tests_for_charToInt)
+                  COMMAND "./StringToInt/tests_for_stringToInt)"
+                  DEPENDS tests_for_stringToInt)

@@ -1,4 +1,4 @@
-#include "charToInt.hpp"
+#include "stringToInt.hpp"
 
 #include <string>
 
