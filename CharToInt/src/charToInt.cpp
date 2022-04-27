@@ -1,9 +1,10 @@
-// int changeStringToInt(std::string phrase)
-// {
-//     int returnedChar;
-//     for (const auto& c : phrase)
-//     {
-//         returnedChar = phrase[idx] - '0';
-//     }
-//     return returnedChar
-// }
+#include "charToInt.hpp"
+
+#include <string>
+
+int changeCharToInt(char& character)
+{
+    int returnedChar;
+    returnedChar = character - '0';
+    return returnedChar;
+}

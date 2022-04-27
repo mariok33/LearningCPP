@@ -1,3 +1,5 @@
-// #pragma once
+#pragma once
 
-// int changeStringToInt(std::string phrase);
+#include <string>
+
+int changeCharToInt(char& character);

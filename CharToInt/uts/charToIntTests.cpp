@@ -1,18 +1,18 @@
-// #include "stringToInt.hpp"
-// #include "gtest/gtest.h"
+#include "charToInt.hpp"
+#include "gtest/gtest.h"
 
-// class StringToIntTests : public ::testing::Test 
-// {
-// public:
-//     StringToIntTests() {};
-//     ~StringToIntTests() override {};
+class CharToIntTests : public ::testing::Test 
+{
+public:
+    CharToIntTests() {};
+    ~CharToIntTests() override {};
 
-//     void SetUp() override {};
-//     void TearDown() override {};
-// };
+    void SetUp() override {};
+    void TearDown() override {};
+};
 
-// TEST_F(StringToIntTests, shouldReturn0ChangeStringToIntFunctionParameterValueOfA)
-// {
-//     std::string phrase {"A"};
-//     EXPECT_EQ(changeStringToInt(phrase), 17);
-// }
+TEST_F(CharToIntTests, shouldReturn1ChangeCharToIntFunctionParameterValueOf1)
+{
+    char character {'1'};
+    EXPECT_EQ(changeCharToInt(character), 1);
+}
