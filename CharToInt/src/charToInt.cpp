@@ -2,9 +2,12 @@
 
 #include <string>
 
-int changeCharToInt(char& character)
+int changeStringToInt(std::string phrase)
 {
-    int returnedChar;
-    returnedChar = character - '0';
+    int returnedChar {0};
+    for(const auto& c : phrase)
+    {
+        returnedChar = returnedChar * 10 + (c - '0');
+    }
     return returnedChar;
 }

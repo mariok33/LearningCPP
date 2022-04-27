@@ -1,3 +1,5 @@
 #pragma once
 
-int changeCharToInt(char& character);
+#include <string>
+
+int changeStringToInt(std::string phrase);
